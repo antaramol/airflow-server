@@ -1,6 +1,3 @@
-dags/*
-logs/*
-
 requirements/certs/*
 asi_pki.zip
 
