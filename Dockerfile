@@ -21,6 +21,10 @@ RUN apt-get update \
   && echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc \
   && source ~/.bashrc
 
+# install tkinter for python
+RUN apt-get update \
+  && apt-get install -y python3-tk
+
 # install ca-certificates
 RUN apt-get update && \
   apt-get install ca-certificates && \
@@ -44,4 +48,5 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements/requirements.txt
 
 
-ENV PYTHONPATH "${PYTHONPATH}:${AIRFLOW_HOME}/dags/ASI_AA_ETL/ASI_AA_DNI_Signals/dni_signals_dag"
+# ENV PYTHONPATH "${PYTHONPATH}:${AIRFLOW_HOME}/dags/hello_world"
+ENV PYTHONPATH "${PYTHONPATH}:${AIRFLOW_HOME}/fs_processes"
