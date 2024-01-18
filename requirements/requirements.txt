@@ -20,3 +20,4 @@ papermill==2.5.0
 matplotlib==3.8.2
 seaborn==0.13.0
 joypy==0.2.6
+pandas==2.0.1

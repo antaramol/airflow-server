@@ -7,6 +7,10 @@ up:
 down:
 	docker compose down
 
+reload:
+	docker compose down
+	docker compose up -d
+
 clean:
 	docker compose down --rmi all --volumes --remove-orphans
 	docker system prune -af
