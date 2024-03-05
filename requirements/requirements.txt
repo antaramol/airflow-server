@@ -5,7 +5,7 @@
 azure-core==1.28.0
 azure-eventhub==5.11.3
 azure-storage-blob==12.17.0
-certifi~>2022.12.07
+certifi==2019.11.28
 # SQLAlchemy==2.0.21
 apache-airflow-providers-docker==3.8.0
 apache-airflow-providers-microsoft-mssql==3.5.0
